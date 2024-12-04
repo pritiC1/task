@@ -1,33 +1,30 @@
 class Student():
 
-    def _init_(self,stud,n):
-        for i in range(1,n+1):
-            self.first_name=stud[i][0]
-            self.middle_name=stud[i][1]
-            self.last_name=stud[i][2]
-            self.caste=stud[i][3]
-            self.category=stud[i][4]
-            self.email=stud[i][5]
-            self.phone_number=stud[i][6]
-            self.dob=stud[i][7]
-            self.parent_first_name=stud[i][8]
-            self.parent_middle_name=stud[i][9]
-            self.parent_last_name=stud[i][10]
-            self.parent_p_no=stud[i][11]
-            self.parent_email=stud[i][12]
-            self.admission_year=stud[i][13]
+    def __init__(self,stud,n):
+        
+            self.first_name=stud[0]
+            self.middle_name=stud[1]
+            self.last_name=stud[2]
+            self.caste=stud[3]
+            self.category=stud[4]
+            self.email=stud[5]
+            self.phone_number=stud[6]
+            self.dob=stud[7]
+            self.parent_first_name=stud[8]
+            self.parent_middle_name=stud[9]
+            self.parent_last_name=stud[10]
+            self.parent_p_no=stud[11]
+            self.parent_email=stud[12]
+            self.admission_year=stud[13]
 
             self.generate_PRN()
 
-    def generate_PRN(self,stud,i):
-        lst=[]
-        unique=""
-        for i in phone_number:
-            if i in phone_number[10:5]:
-                unique=unique+i
+    def generate_PRN(self,stud):
+        list=[]
+        unique = self.phone_number[-6:]
         PRN=self.admission_year+stud+self.caste+unique
-        if PRN is not lst:
-            lst.append(PRN)
+        if PRN is not list:
+            list.append(PRN)
         print(PRN)
         self.admit()
 
@@ -67,7 +64,7 @@ class Student():
 n=input("enter no.of student enrolled:")
 dict={}
 
-for i in range(1,n+1):
+for i in range(n):
 
     first_name=input("enter the first name:")
     middle_name=input("enter middle name:")
@@ -84,7 +81,7 @@ for i in range(1,n+1):
     parent_email=input("enter parent email:")
     admission_year=input("admission_year")
 
-dict.setdefault(i,[first_name,middle_name,last_name,caste,category,email,phone_number,dob,parent_first_name,parent_middle_name,parent_last_name,parent_p_no,parent_email,admission_year]  )    
+stud[first_name,middle_name,last_name,caste,category,email,phone_number,dob,parent_first_name,parent_middle_name,parent_last_name,parent_p_no,parent_email,admission_year]  )    
 
 
-num=Student(dict,n)
+student.append(student(student_data))
