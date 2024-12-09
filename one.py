@@ -81,7 +81,6 @@ for i in range(n):
     parent_email=input("enter parent email:")
     admission_year=input("admission_year")
 
-stud[first_name,middle_name,last_name,caste,category,email,phone_number,dob,parent_first_name,parent_middle_name,parent_last_name,parent_p_no,parent_email,admission_year]  )    
+obj=Student(first_name,middle_name,last_name,caste,category,email,phone_number,dob,parent_first_name,parent_middle_name,parent_last_name,parent_p_no,parent_email,admission_year )    
 
 
-student.append(student(student_data))
